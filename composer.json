@@ -1,0 +1,42 @@
+{
+    "name": "zavodilo/VkDriver",
+    "license": "MIT",
+    "description": "VK driver for BotMan",
+    "keywords": [
+        "Bot",
+        "BotMan",
+        "VK"
+    ],
+    "homepage": "http://github.com/zavodilo/VkDriver",
+    "authors": [
+        {
+            "name": "Marcel Pociot",
+            "email": "m.pociot@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "botman/botman": "~2.0"
+    },
+    "require-dev": {
+        "botman/studio-addons": "~1.0",
+        "illuminate/contracts": "~5.5.0",
+        "phpunit/phpunit": "~5.0",
+        "mockery/mockery": "dev-master",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Services\\Chat\\ChatDrivers\\Vkontakte\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "cs": "php-cs-fixer fix"
+    }
+}
